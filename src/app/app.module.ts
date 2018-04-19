@@ -21,7 +21,7 @@ import {ConversationsModule} from "./conversations/conversations.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
