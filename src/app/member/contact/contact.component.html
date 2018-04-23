@@ -1,26 +1,18 @@
-<table class="table table-striped">
+<table class="table table-striped contactTable">
   <thead>
     <tr>
       <th>Firstname</th>
       <th>Lastname</th>
       <th>Email</th>
+      <th>Phone</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>John</td>
-      <td>Doe</td>
-      <td>john@example.com</td>
-    </tr>
-    <tr>
-      <td>Mary</td>
-      <td>Moe</td>
-      <td>mary@example.com</td>
-    </tr>
-    <tr>
-      <td>July</td>
-      <td>Dooley</td>
-      <td>july@example.com</td>
+    <tr *ngFor="let eachContact of contacts">
+      <td>{{eachContact.firstName | uppercase}}</td>
+      <td>{{eachContact.lastName | slugify }}</td>
+      <td>{{eachContact.email}}</td>
+      <td>{{eachContact.phone}}</td>
     </tr>
   </tbody>
 </table>
