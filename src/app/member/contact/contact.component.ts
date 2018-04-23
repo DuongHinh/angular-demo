@@ -28,21 +28,21 @@ export class ContactComponent implements OnInit {
       id: 1,
       firstName: 'Sy',
       lastName: 'Nguyen Van',
-      phone: '0934908042',
+      phone: null,
       email: 'synv@gemvietnam.com'
     },
     {
       id: 1,
       firstName: 'Binh',
       lastName: 'Nguyen Thanh',
-      phone: '0914980141',
+      phone: null,
       email: 'binhnt@gemvietnam.com'
     },
     {
       id: 1,
       firstName: 'Dung',
       lastName: 'Nguyen Ba',
-      phone: '0964970140',
+      phone: null,
       email: 'dungnb@gemvietnam.com'
     }
   ];

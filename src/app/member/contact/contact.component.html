@@ -12,7 +12,7 @@
       <td>{{eachContact.firstName | uppercase}}</td>
       <td>{{eachContact.lastName | slugify }}</td>
       <td>{{eachContact.email}}</td>
-      <td>{{eachContact.phone}}</td>
+      <td [class.text-warning]="eachContact.phone === null" [class.text-success]="eachContact.phone !== null" >{{eachContact.phone ? eachContact.phone : 'n/a'}}</td>
     </tr>
   </tbody>
 </table>
